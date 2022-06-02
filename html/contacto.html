@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>contacto</title>
+</head>
+<body> 
+    <header>
+        <nav>  
+            <div class="nav">
+                <ul>
+                    <li><a href="home.html">home</a> </li>
+                    <li><a href="servicios.html">servicios</a> </li>
+                    <li><a href="noticias.html">noticias</a></li>
+                    <li><a href="business.html">business</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                    <li><a href="categoria.html">categoria</a></li>
+                </ul>
+            </div>
+        </nav>  
+    </header>      
+     <!--fin de nav-->
+                         <!--empieza el formulario-->
+    <form>
+        <div class="formulario">
+            <h1>formulario</h1>
+            <label for="nombre">nombre:</label>                               <!--ingresa datos personales-->
+            <input type="text" name="nombre" required>
+            <br>
+            <label for="apellido">apellido</label>
+            <input type="text" name="apellido" required>
+            <br>
+            <label for="email">email:</label>
+            <input type="email" name="email" required>
+            <br>                                                              <!--fin de ingresar datos personales-->
+            <label for="estado_civil">estado civil: </label>                  <!--selec de estado civil-->
+            <select name="estado_civil"> 
+                <option value="soltero">soltero/a </option>
+                <option value="casado">casado/a</option>   
+            </select>
+            <br>
+            <label for="pais">pais:</label>                                   <!--selec de pais-->
+            <select name="pais" id="">
+                <option value="option1">argentina</option>
+                <option value="option2">brasil</option>
+                <option value="option3">chile</option>
+                <option value="option4">peru</option>
+            </select>
+            <br>
+            <label for="text">genero:</label>                                 <!--genero-->
+            <label for="text">varon</label>         
+            <input type="radio" name="identidad" required>
+            <label for="text">mujer</label>
+            <input type="radio" name="identidad" required>
+            <label for="text">otro</label>
+            <input type="radio" name="identidad" required>
+            <br>                                                              <!--fin de eleccion de genero-->
+            <label for="pregunta">deseas recibir nuetras noticias?</label>    <!--pregunta con checkbox-->
+            <input type="checkbox" name="" id="">
+            <br>
+            <label for="text"> <strong>comentanos tus dudas:</strong></label> <!--caja de comentario-->
+            <br>
+            <textarea name="formulario" id="" cols="30" rows="10" required></textarea>
+            <br>
+            <button>enviar</button>                                           <!--botones de enviar y borrar todo-->
+            <button type="reset">borrar todo</button>             
+        </div>
+    </form>
+        <!--termina el formulario-->
+    <footer>
+        <h3>facebook</h3>
+        <h3>ubicacion</h3>
+        <h3>telefono</h3>
+        <h3>e-mail</h3>
+        <h3>tarjeta</h3>
+        <h3>informacion</h3>   
+    </footer>            
+</body>
+</html>

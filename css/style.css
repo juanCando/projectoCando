@@ -1,0 +1,179 @@
+body {
+    background-color: rgba(128, 137, 146, 0.308);
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+/* --------------------------- cuerpo --------------------------- */
+
+/* --------------------------- cominezo de todo el navegador --------------------------- */
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;   
+}
+
+header img{
+    width: 82px;
+    padding-left: 43px;
+}
+
+.header__nav{
+    list-style-type: none;
+}
+
+.header__nav li{
+    padding: 10px;
+    display: inline-block;
+    margin: 30px;
+}
+
+.header__nav a{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+    text-shadow: 0px 0px 5px black ;
+}
+/* --------------------- fin de todo el navegador --------------------------- */
+
+/* --------------------------- informacion de empresa y servicio --------------------------- */
+section{
+    grid-area: "section";
+    position: relative;
+}
+section img{
+    width: 100%;
+    height: 970px;
+    filter: brightness(70%);
+}
+.texto{
+    color: rgb(240, 240, 240);
+    position: absolute;
+    top: 300px;
+    left: 25%;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 10px 10px 5px black;
+}
+/* --------------------------- fin de informacion de empresa y servicio --------------------------- */
+
+/* --------------------------- comienso del contenido --------------------------- */
+main{
+    grid-area: "main";
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productos-container{
+    margin: 20px;
+}
+
+.productos-container:hover{
+    box-shadow: 0 8px 16px 0 gray;
+}
+
+.img{
+    width: 340px;   
+}
+/* --------------------------- fin del contenido --------------------------- */
+
+/* --------------------------- empieza el footer --------------------------- */
+footer{
+    grid-area: "footer";
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-style: solid;
+    padding: 4px;
+    background-color: brown;
+}
+
+footer h3{
+    font-size: 20px;
+    color: white;
+}
+
+/* --------------------------- termina el footer --------------------------- */
+
+/* --------------------------- aca empieza el formulario --------------------------- */
+form{
+    border-left: 50px;
+    text-align: center;
+}
+.formulario{
+    background-color: rgb(152, 230, 75);
+    display: inline-block;
+    border: 4px solid black;
+    border-radius: 40px;
+}
+/* --------------------------- aca termina el formulario --------------------------- */
+
+/* --------------------------- logo de whatsapp --------------------------- */
+.flotante a{
+    background: #2CB742;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.flotante_hijo{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.flotante img{
+    vertical-align: middle;
+}
+/* --------------------------- fin logo whatsapp --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* display: flex; */
+/* background-color: cadetblue; */
+/* flex-direction: row-reverse;  */
+/* flex-wrap: wrap-reverse;  */
+/* flex-flow: column wrap; */
+/* justify-content: flex-end; por defecto arriba a la izquierda*/
+/* justify-content: space-around; */
+/* align-items: center; */    
+/* align-items: end; */
+
+
+
+
+
+
+
+
