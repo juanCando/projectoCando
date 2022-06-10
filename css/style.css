@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(128, 137, 146, 0.308);
+    background-color: rgba(92, 92, 92, 0.308);
     margin: 0%;
     padding: 0%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -62,7 +62,6 @@ section img{
 
 /* --------------------------- comienso del contenido --------------------------- */
 main{
-    grid-area: "main";
     border: 1px solid red;
     display: flex;
     flex-wrap: wrap;
@@ -71,6 +70,8 @@ main{
 
 .productos-container{
     margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .productos-container:hover{
