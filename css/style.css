@@ -8,17 +8,18 @@ body {
 
 /* --------------------------- cominezo de todo el navegador --------------------------- */
 header{
-    position: absolute;
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;   
+    z-index: 1;
+    background-color: rgb(247, 247, 247);   
 }
 
 header img{
-    width: 82px;
-    padding-left: 43px;
+    width: 110px;
+    /* padding-left: 43px; */
 }
 
 .header__nav{
@@ -41,7 +42,6 @@ header img{
 
 /* --------------------------- informacion de empresa y servicio --------------------------- */
 section{
-    grid-area: "section";
     position: relative;
 }
 section img{
@@ -83,23 +83,6 @@ main{
 }
 /* --------------------------- fin del contenido --------------------------- */
 
-/* --------------------------- empieza el footer --------------------------- */
-footer{
-    grid-area: "footer";
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-style: solid;
-    padding: 4px;
-    background-color: brown;
-}
-
-footer h3{
-    font-size: 20px;
-    color: white;
-}
-
-/* --------------------------- termina el footer --------------------------- */
 
 /* --------------------------- aca empieza el formulario --------------------------- */
 form{
@@ -135,6 +118,86 @@ form{
 }
 /* --------------------------- fin logo whatsapp --------------------------- */
 
+
+
+
+/* --------------------------- empieza el footer --------------------------- */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a1a2a;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    border-radius: 40px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/* --------------------------- termina el footer --------------------------- */
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
 
 
 
