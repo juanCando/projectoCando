@@ -1,0 +1,243 @@
+body {
+    background-color: rgba(92, 92, 92, 0.308);
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+/* --------------------------- cuerpo --------------------------- */
+
+/* --------------------------- cominezo de todo el navegador --------------------------- */
+header{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    background-color: rgb(247, 247, 247);   
+}
+
+header img{
+    width: 110px;
+    /* padding-left: 43px; */
+}
+
+.header__nav{
+    list-style-type: none;
+}
+
+.header__nav li{
+    padding: 10px;
+    display: inline-block;
+    margin: 30px;
+}
+
+.header__nav a{
+    text-decoration: none;
+    font-size: 150%;
+    color: white;
+    text-shadow: 0px 0px 5px black ;
+}
+/* --------------------- fin de todo el navegador --------------------------- */
+
+/* --------------------------- informacion de empresa y servicio --------------------------- */
+section{
+    position: relative;
+}
+section img{
+    width: 100%;
+    height: 970px;
+    filter: brightness(70%);
+}
+.texto{
+    color: rgb(240, 240, 240);
+    position: absolute;
+    top: 300px;
+    left: 25%;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 10px 10px 5px black;
+}
+/* --------------------------- fin de informacion de empresa y servicio --------------------------- */
+
+/* --------------------------- comienso del contenido --------------------------- */
+main{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.productos-container{
+    margin: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.productos-container:hover{
+    box-shadow: 0 8px 16px 0 gray;
+}
+
+.img{
+    width: 340px;   
+}
+/* --------------------------- fin del contenido --------------------------- */
+
+
+/* --------------------------- aca empieza el formulario --------------------------- */
+form{
+    border-left: 50px;
+    text-align: center;
+}
+.formulario{
+    background-color: rgb(152, 230, 75);
+    display: inline-block;
+    border: 4px solid black;
+    border-radius: 40px;
+}
+/* --------------------------- aca termina el formulario --------------------------- */
+
+/* --------------------------- logo de whatsapp --------------------------- */
+.flotante a{
+    background: #2CB742;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.flotante_hijo{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+}
+
+.flotante img{
+    vertical-align: middle;
+}
+/* --------------------------- fin logo whatsapp --------------------------- */
+
+
+
+
+/* --------------------------- empieza el footer --------------------------- */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a1a2a;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+    border-radius: 40px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/* --------------------------- termina el footer --------------------------- */
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* display: flex; */
+/* background-color: cadetblue; */
+/* flex-direction: row-reverse;  */
+/* flex-wrap: wrap-reverse;  */
+/* flex-flow: column wrap; */
+/* justify-content: flex-end; por defecto arriba a la izquierda*/
+/* justify-content: space-around; */
+/* align-items: center; */    
+/* align-items: end; */
+
+
+
+
+
+
+
+
