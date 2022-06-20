@@ -9,10 +9,10 @@
   }
   
   body {
-    font-family: "Public Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 1.2rem;
     min-height: 100%;
-    background-color: rgba(197, 196, 196, 0.692);
+    background-color: rgba(255, 255, 255, 0.904);
   }
   
   .grid-container > * {
@@ -21,12 +21,13 @@
     padding: 10px;
   }
   
-/* ----------------cominezo del navegador---------------- */
+
+
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ cominezo del navegador ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
 
   
   .header {
     grid-area: header;
-    position: sticky;
     background-color: #0e2135;
     display: flex;
     justify-content: space-between;
@@ -42,55 +43,111 @@
     list-style-type: none;
 }
 
-.header__nav li{
-    padding: 5px;
+.header__nav li {
+    padding: 10px;
     display: inline-block;
     margin: 10px;
-    border: 1px solid white;
     border-radius: 10px;
 }
-.header__nav li :hover{
-  border: 4px solid rgb(93, 248, 163);
+.links{
+  display: inline-block;
+}
+.header__nav .links li :hover{
+  color: aqua;
 }
 
+
 .header__nav a{
+
     text-decoration: none;
     font-size: 100%;
     color: white;
     text-shadow: 0px 0px 5px black ;
 }
 
-@media screen and(min-width: 1400px ){
-  .header__logo img{
-    width: 0px;
-    border-radius: 20px;
+
+
+@media (max-width: 1020px ){
+  .header{
+    flex-direction: column;
   }
 
 
 }
   
 
-/* ----------------fin del navegador---------------- */
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ fin del navegador ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ */
 
-/* ----------------carrusel---------------- */
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ carrusel ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
 
 .box_carrucel{
   padding: 0px;
 }
 
-/* -----------fin de carrucel--------------- */
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ fin de carrucel ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ */
 
-/* -------------servicios------------- */
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ servicios ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
 
-.services .icon{
-  float: left;
-  color: red;
-  font-size: 35px;
+.services{
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  padding: 60px 0 40px 0;
+}
+
+.row{
+  display: flex;
+  
+}
+
+.section-titulo h3{
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-titulo p{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services .box{
+  margin-bottom: 30px;
 }
 
 
+.services .icon{
+  float: left;
+  color: rgba(0, 95, 127);
+  font-size: 35px;
+  padding-right: 10px;
+}
 
-/* ----------------contenido---------------- */
+.title{
+    margin-left: 60px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.descripcion{
+    font-size: 14px;
+    margin-left: 60px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+.title a{
+  text-decoration: none;
+  color: #0a1a2a;
+}
+
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ fin de sevicios ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆*/
+
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ contenido ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
 .productos{
   display: flex;
   flex-wrap: wrap;
@@ -99,8 +156,8 @@
 
 .productos-container{
   margin: 20px;
-  border: 1px solid black;
-  border-radius: 5px;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 
 .productos-container:hover{
@@ -108,15 +165,17 @@
 }
 
 .img{
-  width: 340px;   
+  width: 300px;
+  padding: 5px;
+  border-radius: 30px;   
 }
 
-/* -----------------fin del contenido---------------- */
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ fin del contenido ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ */
 
 
 
 
-/* --------------------------- empieza el footer --------------------------- */
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ empieza el footer ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
 .pie-pagina{
   width: 100%;
   background-color: #0a1a2a;
@@ -184,9 +243,109 @@
   }
 }
 
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ termina el footer ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ */
+
+.info-empresa{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;  
+}
+.box-texto-empresa{
+  padding: 10px;
+  text-align: center;
+}
+.imagen-empresa{
+  display: flex;
+}
+.imagen-empresa img{
+  border-radius: 20px;
+}
+.img-2 img{
+  height: 450px;
+}
+
+/* ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ empieza el formulario ⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇⬇ */
+
+.container-form{
+  background-color: rgba(185, 179, 179, 0.555);
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 50px;
+  margin-top: 40px;
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 20px;  
+}
+.campo{
+  background-color: rgba(255, 254, 254, 0.842);
+}
+
+.container-form h2{
+  margin-bottom: 15px;
+  font-size: 35px
+}
+.container-form p{
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.container-form a{
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 700;
+}
+.container-form a i{
+  color: #0a1a2a;
+  margin-right: 10px;
+}
+.container-form form .campo, textarea{
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  outline: 0px;
+}
+.container-form form textarea{
+  max-width: 530px;
+  min-width: 530px;
+  min-height: 140px;
+  max-height: 150px;
+}
+.container-form .btn-enviar{
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: 0px;
+  background: #0a1a2a;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.container-form .btn-enviar:hover{
+  background: #0a1a2a;
+}
+
+/* ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ termina el formunario ⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆ */
 
 
-/* --------------------------- termina el footer --------------------------- */
+
+
+
+
+
+
 
   .main {
     grid-area: main;
@@ -197,11 +356,11 @@
   .grid-container {
     display: grid;
     grid-template:
-      "header"  100px
+      "header"  auto
       "main"    auto
       "footer"  auto;
-
   }
+
 
 
 
